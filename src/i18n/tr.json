@@ -1,13 +1,13 @@
 {
     "title": "Vocapedia",
-    "search_placeholder": "Chapter ID girin",
+    "search_placeholder": "Liste kimliği girin",
     "interval_placeholder": "Kaç dakikada bir?",
     "fetchData": "Başlat",
     "stopFetch": "Durdur",
-    "invalid_chapter_id": "Geçersiz Chapter ID",
+    "invalid_chapter_id": "Geçersiz Liste kimliği",
     "invalid_interval": "Geçerli bir dakika değeri girin",
     "stopped": "Bildirim gönderimi durduruldu",
-    "chapter_id": "Chapter ID",
+    "chapter_id": "Liste kimliği",
     "fetchError": "Veri çekme hatası",
     "start_notification_title": "Vocapedia Uzantısı",
     "start_notification_message": "Veri çekme işlemi başlatıldı."

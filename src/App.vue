@@ -13,7 +13,7 @@
           :placeholder="$t('search_placeholder')" />
 
         <label for="interval" class="block text-lg font-medium text-gray-700 mt-4">{{ $t('interval_placeholder')
-          }}</label>
+        }}</label>
         <input id="interval" v-model.number="interval" type="number" min="1"
           class="mt-2 w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           :placeholder="$t('interval_placeholder')" />

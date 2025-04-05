@@ -9,9 +9,10 @@ chrome.alarms.onAlarm.addListener(function (alarm) {
 async function fetchData() {
     chrome.storage.local.get(['chapterID'], async function (result) {
         const chapterID = result.chapterID;
+        const fakeEndpoint = chrome.runtime.getURL('chapters/1904652438552449024.json')
         if (chapterID) {
             try {
-                const response = await fetch(`http://localhost:3000/api/v1/public/chapters/extension?chapter_id=${chapterID}`);
+                const response = await fetch(fakeEndpoint)//`https://vocapedia.space/api/v1/public/chapters/extension/${chapterID}`);
                 const data = await response.json();
                 showNotification(data);
             } catch (error) {
