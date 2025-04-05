@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Vocapedia Extension",
+    "name": "Vocapedia Notifier",
     "version": "1.0",
-    "description": "Kelimeyi hızlıca vocapedia.space'de ara",
+    "description": "Welcome to the Vocapedia Extension! This extension sends the words of the desired chapter as a notification when you want.",
     "action": {
         "default_popup": "./index.html",
         "default_icon": "logo.png"
@@ -12,8 +12,6 @@
     },
     "permissions": [
         "tabs",
-        "activeTab",
-        "scripting",
         "alarms",
         "notifications",
         "storage"
