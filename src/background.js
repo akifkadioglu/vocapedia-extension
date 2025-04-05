@@ -1,3 +1,5 @@
+const notificationMap = new Map();
+
 chrome.alarms.onAlarm.addListener(function (alarm) {
     if (alarm.name === 'fetchDataAlarm') {
         fetchData();
@@ -20,8 +22,11 @@ async function fetchData() {
 }
 
 function showNotification(message) {
-    var chapterID = BigInt(message.chapter_id).toString();
-    var wordID = BigInt(message.word_id).toString();
+    const chapterID = BigInt(message.chapter_id).toString();
+    const wordID = BigInt(message.word_id).toString();
+
+    notificationMap.set(wordID, chapterID);
+
     chrome.notifications.create(wordID, {
         type: 'basic',
         iconUrl: chrome.runtime.getURL('logo.png'),
@@ -29,12 +34,12 @@ function showNotification(message) {
         message: message.second,
         priority: 2,
     });
-    chrome.notifications.onClicked.addListener((clickedNotificationId) => {
-        if (clickedNotificationId === wordID) {
-            chrome.tabs.create({ url: 'https://vocapedia.space/l/' + chapterID });
-        }
-    });
-
 }
 
-
+chrome.notifications.onClicked.addListener((clickedNotificationId) => {
+    const chapterID = notificationMap.get(clickedNotificationId);
+    if (chapterID) {
+        chrome.tabs.create({ url: 'https://vocapedia.space/l/' + chapterID });
+        notificationMap.delete(clickedNotificationId);
+    }
+});
