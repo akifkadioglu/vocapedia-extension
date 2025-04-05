@@ -1,0 +1,14 @@
+{
+  "title": "Vocapedia",
+  "search_placeholder": "输入章节ID",
+  "interval_placeholder": "每隔多少分钟？",
+  "fetchData": "开始",
+  "stopFetch": "停止",
+  "invalid_chapter_id": "无效的章节ID",
+  "invalid_interval": "请输入有效的分钟值",
+  "stopped": "通知发送已停止",
+  "chapter_id": "章节ID",
+  "fetchError": "数据获取错误",
+  "start_notification_title": "Vocapedia扩展程序",
+  "start_notification_message": "数据获取已开始。"
+}

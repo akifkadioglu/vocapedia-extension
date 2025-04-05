@@ -1,0 +1,14 @@
+{
+    "title": "Vocapedia",
+    "search_placeholder": "Enter Chapter ID",
+    "interval_placeholder": "Every how many minutes?",
+    "fetchData": "Start",
+    "stopFetch": "Stop",
+    "invalid_chapter_id": "Invalid Chapter ID",
+    "invalid_interval": "Enter a valid minute value",
+    "stopped": "Notification sending stopped",
+    "chapter_id": "Chapter ID",
+    "fetchError": "Data fetching error",
+    "start_notification_title": "Vocapedia Extension",
+    "start_notification_message": "Data fetching started."
+  }

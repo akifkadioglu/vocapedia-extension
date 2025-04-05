@@ -1,0 +1,14 @@
+{
+    "title": "Vocapedia",
+    "search_placeholder": "Introducir ID del Capítulo",
+    "interval_placeholder": "¿Cada cuántos minutos?",
+    "fetchData": "Iniciar",
+    "stopFetch": "Detener",
+    "invalid_chapter_id": "ID del Capítulo no válido",
+    "invalid_interval": "Introducir un valor de minutos válido",
+    "stopped": "Envío de notificaciones detenido",
+    "chapter_id": "ID del Capítulo",
+    "fetchError": "Error al obtener datos",
+    "start_notification_title": "Extensión Vocapedia",
+    "start_notification_message": "Obtención de datos iniciada."
+  }

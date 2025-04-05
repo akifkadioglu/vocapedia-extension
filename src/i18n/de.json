@@ -1,0 +1,14 @@
+{
+    "title": "Vocapedia",
+    "search_placeholder": "Kapitel-ID eingeben",
+    "interval_placeholder": "Alle wie viele Minuten?",
+    "fetchData": "Starten",
+    "stopFetch": "Stoppen",
+    "invalid_chapter_id": "Ungültige Kapitel-ID",
+    "invalid_interval": "Geben Sie einen gültigen Minutenwert ein",
+    "stopped": "Benachrichtigungssendung gestoppt",
+    "chapter_id": "Kapitel-ID",
+    "fetchError": "Datenabruffehler",
+    "start_notification_title": "Vocapedia-Erweiterung",
+    "start_notification_message": "Datenabruf gestartet."
+  }
